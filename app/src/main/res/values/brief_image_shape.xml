@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="brief_image_shape">
+        <item name="cornerSizeBottomLeft">250dp</item>
+        <item name="cornerFamilyBottomLeft">rounded</item>
+
+    </style>
+</resources>

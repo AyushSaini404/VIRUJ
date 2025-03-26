@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".brief1"
+    android:background="@drawable/brief_page_background">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imageView3"
+        android:layout_width="454dp"
+        android:layout_height="438dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearanceOverlay="@style/brief_image_shape"
+        app:srcCompat="@drawable/brief3" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/poppinsbold"
+        android:text="Meet Viruj AI,\n Your Smart\n Health Assistant"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/poppinsmedium"
+        android:text="Describe your symptoms, get quick\n health insights, and personalized \nrecommendations. Viruj AI is here to\n guide you."
+        android:textAlignment="center"
+        android:textColorLink="#D3D0D0"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView2"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonbrief1"
+        android:layout_width="135dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="62dp"
+        android:background="@drawable/button_gradient"
+        android:fontFamily="@font/poppinsbold"
+        android:text="NEXT"
+        android:textAlignment="center"
+        android:textColor="#330404"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
