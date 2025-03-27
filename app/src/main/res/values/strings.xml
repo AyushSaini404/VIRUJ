@@ -10,4 +10,9 @@
     <string name="password">Password</string>
     <string name="e_mail">E-mail</string>
     <string name="welcome_back">WELCOME BACK</string>
+    <string name="google">google</string>
+    <string name="mac">mac</string>
+    <string name="facebook">facebook</string>
+    <string name="twitter">twitter</string>
+    <string name="viruj">VIRUJ</string>
 </resources>

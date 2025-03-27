@@ -5,13 +5,14 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Login">
+    tools:context=".Login"
+    android:background="@drawable/login_page_background">
 
     <ImageView
         android:id="@+id/imageView4"
         android:layout_width="184dp"
         android:layout_height="184dp"
-        android:layout_marginTop="35dp"
+        android:layout_marginTop="70dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -22,12 +23,12 @@
         android:id="@+id/textView6"
         android:layout_width="294dp"
         android:layout_height="47dp"
-        android:layout_marginTop="10dp"
-        android:text="@string/welcome_back"
-        android:textStyle="bold"
-        android:textSize="30sp"
+        android:layout_marginTop="15dp"
         android:fontFamily="@font/poppinsbold"
+        android:text="@string/welcome_back"
         android:textAlignment="center"
+        android:textSize="30sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/imageView4"
         app:layout_constraintStart_toStartOf="@+id/imageView4"
         app:layout_constraintTop_toBottomOf="@+id/imageView4" />
@@ -36,7 +37,7 @@
         android:id="@+id/editTextTextEmailAddress"
         android:layout_width="332dp"
         android:layout_height="48dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="15dp"
         android:autofillHints="emailAddress"
         android:ems="10"
         android:hint="@string/e_mail"
@@ -49,7 +50,7 @@
         android:id="@+id/editTextTextPassword"
         android:layout_width="332dp"
         android:layout_height="48dp"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="10dp"
         android:autofillHints="password"
         android:ems="10"
         android:hint="@string/password"
@@ -63,6 +64,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
+        android:layout_marginTop="5dp"
         android:text="@string/remember_me"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/editTextTextPassword" />
@@ -80,9 +82,9 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/button"
-        android:layout_width="332dp"
+        android:layout_width="330dp"
         android:layout_height="48dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="20dp"
         android:background="@drawable/button_gradient"
         android:text="@string/login"
         app:layout_constraintEnd_toEndOf="parent"
@@ -94,7 +96,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="35dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button"
         app:srcCompat="@drawable/red_line"
@@ -104,7 +106,7 @@
         android:id="@+id/imageView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="35dp"
         android:layout_marginEnd="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button"
@@ -115,11 +117,12 @@
         android:id="@+id/textView9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="37dp"
+        android:layout_marginTop="40dp"
         android:fontFamily="sans-serif-black"
         android:text="@string/or_login_with"
+        app:layout_constraintEnd_toStartOf="@+id/imageView5"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
         app:layout_constraintTop_toBottomOf="@+id/button"
-        tools:layout_editor_absoluteX="164dp"
         tools:ignore="MissingConstraints" />
 
     <TextView
@@ -127,7 +130,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="50dp"
-        android:layout_marginBottom="30dp"
+        android:layout_marginBottom="50dp"
         android:text="@string/don_t_have_an_account"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -138,9 +141,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="65dp"
-        android:layout_marginBottom="30dp"
-        android:textColor="#FC0101"
+        android:layout_marginBottom="50dp"
         android:text="@string/sign_up"
+        android:textColor="#FC0101"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textView12" />
@@ -149,41 +152,45 @@
         android:id="@+id/imageButton10"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/google"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton11"
         app:layout_constraintTop_toBottomOf="@+id/imageView2"
         app:srcCompat="@drawable/google"
-        tools:layout_editor_absoluteX="30dp"
         tools:ignore="ContentDescription,MissingConstraints" />
 
     <ImageButton
         android:id="@+id/imageButton11"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:layout_marginTop="22dp"
+        android:layout_marginTop="30dp"
+        android:contentDescription="@string/mac"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton12"
         app:layout_constraintTop_toBottomOf="@+id/textView9"
         app:srcCompat="@drawable/mac"
-        tools:layout_editor_absoluteX="130dp"
         tools:ignore="ContentDescription,MissingConstraints" />
 
     <ImageButton
         android:id="@+id/imageButton12"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/facebook"
+        android:contextClickable="true"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton13"
         app:layout_constraintTop_toBottomOf="@+id/imageView5"
         app:srcCompat="@drawable/fb"
-        tools:layout_editor_absoluteX="232dp"
         tools:ignore="ContentDescription,MissingConstraints" />
 
     <ImageButton
         android:id="@+id/imageButton13"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:layout_marginTop="10dp"
-        android:contentDescription="@string/todo"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/twitter"
         app:layout_constraintTop_toBottomOf="@+id/imageView5"
         app:srcCompat="@drawable/twitter"
-        tools:layout_editor_absoluteX="332dp"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="273dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
